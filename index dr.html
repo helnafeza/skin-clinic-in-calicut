@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-57H6D5MN');</script>
+<!-- End Google Tag Manager -->
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr Skin – Advanced Laser Hair Reduction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --cream: #faf7f2;
+    --ivory: #f2ede4;
+    --blush: #e8c4b0;
+    --rose: #c8876a;
+    --terra: #a0523a;
+    --deep: #1a1210;
+    --charcoal: #2d2320;
+    --muted: #7a6258;
+    --gold: #c9a96e;
+    --gold-light: #e8d5a8;
+    --white: #ffffff;
+    --shadow: 0 4px 40px rgba(26,18,16,0.10);
+    --shadow-lg: 0 16px 64px rgba(26,18,16,0.15);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    overflow-x: hidden;
+  }
+
+  /* ── STICKY HEADER ── */
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(250,247,242,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(200,135,106,0.18);
+    padding: 0 5%;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+    transition: box-shadow .3s;
+  }
+  header.scrolled { box-shadow: var(--shadow); }
+  .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.55rem; font-weight: 600;
+    color: var(--terra);
+    letter-spacing: .02em;
+    text-decoration: none;
+  }
+  .logo span { color: var(--gold); }
+  nav { display: flex; gap: 2rem; }
+  nav a {
+    font-size: .85rem; font-weight: 500;
+    color: var(--muted); text-decoration: none;
+    letter-spacing: .04em; text-transform: uppercase;
+    transition: color .2s;
+  }
+  nav a:hover { color: var(--terra); }
+  .header-cta {
+    background: var(--terra);
+    color: var(--white); border: none; cursor: pointer;
+    padding: .55rem 1.4rem; border-radius: 50px;
+    font-size: .85rem; font-weight: 500;
+    letter-spacing: .04em;
+    text-decoration: none;
+    transition: background .2s, transform .15s;
+  }
+  .header-cta:hover { background: var(--rose); transform: translateY(-1px); }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    padding-top: 68px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-left {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 7% 6% 7% 8%;
+    position: relative; z-index: 2;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: .5rem;
+    background: var(--ivory); border: 1px solid var(--blush);
+    border-radius: 50px; padding: .4rem 1rem;
+    font-size: .78rem; font-weight: 500; color: var(--terra);
+    letter-spacing: .06em; text-transform: uppercase;
+    margin-bottom: 1.8rem;
+    animation: fadeUp .8s ease both;
+  }
+  .hero-badge::before {
+    content: ''; width: 6px; height: 6px;
+    background: var(--rose); border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.5)} }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.6rem, 4.5vw, 4rem);
+    font-weight: 300; line-height: 1.15;
+    color: var(--deep);
+    margin-bottom: 1.5rem;
+    animation: fadeUp .8s .15s ease both;
+  }
+  h1 em { font-style: italic; color: var(--terra); }
+
+  .hero-sub {
+    font-size: 1.05rem; font-weight: 300; line-height: 1.7;
+    color: var(--muted); max-width: 420px;
+    margin-bottom: 2.4rem;
+    animation: fadeUp .8s .3s ease both;
+  }
+  .hero-btns {
+    display: flex; flex-wrap: wrap; gap: 1rem;
+    animation: fadeUp .8s .45s ease both;
+  }
+  .btn-primary {
+    background: var(--terra); color: var(--white);
+    border: none; cursor: pointer;
+    padding: .9rem 2rem; border-radius: 50px;
+    font-size: .9rem; font-weight: 500;
+    letter-spacing: .04em; text-decoration: none;
+    transition: background .2s, transform .15s, box-shadow .2s;
+    box-shadow: 0 6px 24px rgba(160,82,58,.35);
+  }
+  .btn-primary:hover { background: var(--rose); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(160,82,58,.4); }
+
+  .btn-whatsapp {
+    background: #25D366; color: var(--white);
+    border: none; cursor: pointer;
+    padding: .9rem 2rem; border-radius: 50px;
+    font-size: .9rem; font-weight: 500;
+    letter-spacing: .04em; text-decoration: none;
+    display: flex; align-items: center; gap: .5rem;
+    transition: background .2s, transform .15s;
+  }
+  .btn-whatsapp:hover { background: #1da851; transform: translateY(-2px); }
+
+  .btn-outline {
+    background: transparent; color: var(--terra);
+    border: 1.5px solid var(--blush); cursor: pointer;
+    padding: .9rem 2rem; border-radius: 50px;
+    font-size: .9rem; font-weight: 500;
+    letter-spacing: .04em; text-decoration: none;
+    transition: border-color .2s, background .2s, transform .15s;
+  }
+  .btn-outline:hover { border-color: var(--terra); background: var(--ivory); transform: translateY(-2px); }
+
+  .hero-right {
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.2s .2s ease both;
+  }
+  .hero-img-wrap {
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, #e8c4b0 0%, #d4956a 50%, #a0523a 100%);
+  }
+  .hero-img-wrap::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url('https://images.unsplash.com/photo-1612908989893-7e4d5a2b9aeb?w=900&q=80') center/cover no-repeat;
+    mix-blend-mode: multiply; opacity: .7;
+  }
+  .hero-img-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to right, var(--cream) 0%, transparent 20%);
+  }
+  .hero-stat-card {
+    position: absolute;
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 1rem 1.4rem;
+    box-shadow: var(--shadow-lg);
+    animation: fadeUp .8s ease both;
+  }
+  .hero-stat-card:nth-child(1) { bottom: 20%; left: 5%; animation-delay: .7s; }
+  .hero-stat-card:nth-child(2) { top: 28%; right: 8%; animation-delay: .9s; }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem; font-weight: 600; color: var(--terra);
+    line-height: 1;
+  }
+  .stat-label { font-size: .75rem; color: var(--muted); margin-top: .25rem; }
+
+  @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:none} }
+  @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+
+  /* ── TRUST STRIP ── */
+  #trust {
+    background: var(--charcoal);
+    padding: 2rem 5%;
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 2.5rem;
+  }
+  .trust-item {
+    display: flex; align-items: center; gap: .75rem;
+    color: var(--gold-light);
+  }
+  .trust-icon { font-size: 1.4rem; }
+  .trust-text { font-size: .83rem; font-weight: 500; letter-spacing: .04em; }
+
+  /* ── SECTION SHARED ── */
+  section { padding: 5.5rem 8%; }
+  .section-label {
+    font-size: .75rem; font-weight: 500;
+    color: var(--rose); letter-spacing: .12em;
+    text-transform: uppercase; margin-bottom: .75rem;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 300; line-height: 1.2; color: var(--deep);
+    margin-bottom: 1.2rem;
+  }
+  .section-title em { font-style: italic; color: var(--terra); }
+  .section-sub {
+    font-size: 1rem; color: var(--muted);
+    line-height: 1.75; max-width: 560px;
+  }
+
+  /* ── WHAT IS ── */
+  #what {
+    background: var(--ivory);
+    display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+  }
+  .areas-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem;
+    margin-top: 2rem;
+  }
+  .area-chip {
+    background: var(--white);
+    border: 1px solid var(--blush);
+    border-radius: 50px;
+    padding: .55rem 1rem;
+    font-size: .82rem; font-weight: 500; color: var(--charcoal);
+    text-align: center;
+    transition: background .2s, color .2s, border-color .2s;
+    cursor: default;
+  }
+  .area-chip:hover { background: var(--terra); color: var(--white); border-color: var(--terra); }
+
+  .what-visual {
+    border-radius: 24px; overflow: hidden;
+    position: relative; aspect-ratio: 4/5;
+    box-shadow: var(--shadow-lg);
+  }
+  .what-visual img {
+    width: 100%; height: 100%; object-fit: cover;
+  }
+  .what-visual-badge {
+    position: absolute; bottom: 1.5rem; left: 1.5rem;
+    background: var(--white); border-radius: 14px;
+    padding: .9rem 1.2rem;
+    box-shadow: var(--shadow);
+  }
+  .wvb-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem; font-weight: 600; color: var(--terra); line-height: 1;
+  }
+  .wvb-text { font-size: .75rem; color: var(--muted); }
+
+  /* ── BENEFITS ── */
+  #benefits { background: var(--cream); }
+  .benefits-header { text-align: center; margin-bottom: 3.5rem; }
+  .benefits-header .section-sub { margin: 0 auto; }
+  .benefits-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem;
+  }
+  .benefit-card {
+    background: var(--white);
+    border: 1px solid var(--ivory);
+    border-radius: 20px;
+    padding: 2rem 1.75rem;
+    transition: box-shadow .25s, transform .25s;
+  }
+  .benefit-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+  .benefit-icon {
+    font-size: 2rem; margin-bottom: 1rem;
+    display: inline-block;
+    background: var(--ivory); border-radius: 14px;
+    padding: .6rem .75rem;
+  }
+  .benefit-title { font-size: 1rem; font-weight: 600; color: var(--deep); margin-bottom: .4rem; }
+  .benefit-desc { font-size: .85rem; color: var(--muted); line-height: 1.65; }
+
+  /* ── WHY CHOOSE ── */
+  #why {
+    background: linear-gradient(145deg, var(--charcoal) 0%, var(--deep) 100%);
+    color: var(--white);
+  }
+  #why .section-label { color: var(--gold); }
+  #why .section-title { color: var(--cream); }
+  #why .section-title em { color: var(--gold); }
+  #why .section-sub { color: rgba(250,247,242,.65); }
+  .why-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem; margin-top: 3rem;
+  }
+  .why-card {
+    border: 1px solid rgba(201,169,110,.25);
+    border-radius: 18px; padding: 1.75rem 1.5rem;
+    transition: border-color .25s, background .25s;
+  }
+  .why-card:hover { border-color: var(--gold); background: rgba(201,169,110,.06); }
+  .why-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem; font-weight: 600; color: var(--gold);
+    opacity: .4; line-height: 1; margin-bottom: .75rem;
+  }
+  .why-title { font-size: .95rem; font-weight: 600; color: var(--gold-light); margin-bottom: .5rem; }
+  .why-desc { font-size: .83rem; color: rgba(250,247,242,.55); line-height: 1.65; }
+
+  /* ── BEFORE & AFTER ── */
+  #results { background: var(--ivory); }
+  .results-header { text-align: center; margin-bottom: 3rem; }
+  .results-header .section-sub { margin: 0 auto; }
+  .ba-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;
+  }
+  .ba-card {
+    border-radius: 20px; overflow: hidden;
+    box-shadow: var(--shadow); position: relative;
+    background: var(--cream);
+  }
+  .ba-imgs { display: grid; grid-template-columns: 1fr 1fr; }
+  .ba-img {
+    height: 220px; overflow: hidden; position: relative;
+  }
+  .ba-img img { width: 100%; height: 100%; object-fit: cover; }
+  .ba-label {
+    position: absolute; top: .6rem; left: .6rem;
+    background: rgba(26,18,16,.7);
+    color: var(--white); font-size: .72rem; font-weight: 600;
+    letter-spacing: .06em; padding: .25rem .6rem; border-radius: 50px;
+  }
+  .ba-info { padding: 1.2rem 1.5rem; }
+  .ba-area { font-size: .9rem; font-weight: 600; color: var(--charcoal); }
+  .ba-sessions { font-size: .78rem; color: var(--muted); margin-top: .2rem; }
+  .ba-disclaimer {
+    text-align: center; font-size: .78rem; color: var(--muted);
+    margin-top: 2rem; font-style: italic;
+  }
+
+  /* ── PROCESS ── */
+  #process { background: var(--cream); }
+  .process-header { text-align: center; margin-bottom: 4rem; }
+  .steps {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 0; position: relative;
+  }
+  .steps::before {
+    content: '';
+    position: absolute; top: 2.5rem; left: 12.5%; right: 12.5%;
+    height: 2px; background: linear-gradient(to right, var(--blush), var(--rose), var(--blush));
+  }
+  .step { text-align: center; padding: 0 1.5rem; }
+  .step-num {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: var(--terra); color: var(--white);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-weight: 600;
+    margin: 0 auto 1.5rem; position: relative; z-index: 1;
+    box-shadow: 0 4px 20px rgba(160,82,58,.4);
+  }
+  .step-title { font-size: .95rem; font-weight: 600; color: var(--deep); margin-bottom: .5rem; }
+  .step-desc { font-size: .82rem; color: var(--muted); line-height: 1.6; }
+
+  /* ── TESTIMONIALS ── */
+  #testimonials { background: var(--ivory); }
+  .testi-header { text-align: center; margin-bottom: 3rem; }
+  .testi-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;
+  }
+  .testi-card {
+    background: var(--white); border-radius: 20px;
+    padding: 2rem 1.75rem;
+    box-shadow: var(--shadow);
+    transition: transform .25s, box-shadow .25s;
+  }
+  .testi-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .stars { color: var(--gold); font-size: 1rem; letter-spacing: .1em; margin-bottom: 1rem; }
+  .testi-text { font-size: .92rem; color: var(--charcoal); line-height: 1.75; font-style: italic; margin-bottom: 1.5rem; }
+  .testi-author { display: flex; align-items: center; gap: .75rem; }
+  .testi-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--blush), var(--rose));
+    display: flex; align-items: center; justify-content: center;
+    font-size: .95rem; color: var(--white); font-weight: 600;
+  }
+  .testi-name { font-size: .88rem; font-weight: 600; color: var(--deep); }
+  .testi-meta { font-size: .75rem; color: var(--muted); }
+
+  /* ── FAQ ── */
+  #faq { background: var(--cream); }
+  .faq-header { text-align: center; margin-bottom: 3rem; }
+  .faq-list { max-width: 720px; margin: 0 auto; }
+  .faq-item {
+    border-bottom: 1px solid var(--ivory);
+    padding: 1.4rem 0;
+  }
+  .faq-q {
+    display: flex; justify-content: space-between; align-items: center;
+    cursor: pointer;
+    font-size: .98rem; font-weight: 600; color: var(--deep);
+    gap: 1rem;
+  }
+  .faq-toggle {
+    width: 30px; height: 30px; border-radius: 50%;
+    background: var(--ivory); border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; color: var(--terra); flex-shrink: 0;
+    transition: background .2s, transform .2s;
+  }
+  .faq-item.open .faq-toggle { background: var(--terra); color: var(--white); transform: rotate(45deg); }
+  .faq-a {
+    font-size: .88rem; color: var(--muted); line-height: 1.75;
+    margin-top: .75rem; display: none;
+  }
+  .faq-item.open .faq-a { display: block; }
+
+  /* ── LEAD FORM ── */
+  #form {
+    background: linear-gradient(145deg, var(--terra), var(--rose));
+    color: var(--white);
+  }
+  .form-inner {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+  }
+  .form-left .section-label { color: var(--gold-light); }
+  .form-left .section-title { color: var(--white); }
+  .form-left .section-title em { color: var(--gold-light); }
+  .form-left .section-sub { color: rgba(255,255,255,.75); }
+  .form-perks { margin-top: 2rem; }
+  .form-perk {
+    display: flex; align-items: center; gap: .75rem;
+    font-size: .88rem; color: rgba(255,255,255,.85);
+    margin-bottom: .75rem;
+  }
+  .form-perk-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold-light); flex-shrink: 0; }
+
+  .form-box {
+    background: var(--white); border-radius: 24px;
+    padding: 2.5rem; box-shadow: var(--shadow-lg);
+  }
+  .form-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem; font-weight: 600; color: var(--deep);
+    margin-bottom: 1.5rem;
+  }
+  .form-group { margin-bottom: 1.1rem; }
+  .form-group label { display: block; font-size: .78rem; font-weight: 500; color: var(--muted); margin-bottom: .4rem; letter-spacing: .04em; text-transform: uppercase; }
+  .form-group input,
+  .form-group select {
+    width: 100%; padding: .75rem 1rem;
+    border: 1.5px solid var(--ivory);
+    border-radius: 10px; font-size: .9rem;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--charcoal);
+    background: var(--cream);
+    outline: none;
+    transition: border-color .2s;
+  }
+  .form-group input:focus,
+  .form-group select:focus { border-color: var(--rose); }
+  .form-submit {
+    width: 100%; padding: 1rem;
+    background: var(--terra); color: var(--white);
+    border: none; cursor: pointer; border-radius: 50px;
+    font-size: .95rem; font-weight: 600;
+    letter-spacing: .04em;
+    transition: background .2s, transform .15s, box-shadow .2s;
+    margin-top: .5rem;
+    box-shadow: 0 6px 24px rgba(160,82,58,.35);
+  }
+  .form-submit:hover { background: var(--rose); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(160,82,58,.4); }
+
+  /* ── OFFER BANNER ── */
+  #offer {
+    background: var(--ivory);
+    text-align: center; padding: 3.5rem 8%;
+  }
+  .offer-pill {
+    display: inline-block;
+    background: var(--terra); color: var(--white);
+    font-size: .75rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    padding: .4rem 1rem; border-radius: 50px; margin-bottom: 1.2rem;
+  }
+  .offer-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 300; color: var(--deep); margin-bottom: .8rem;
+  }
+  .offer-title em { font-style: italic; color: var(--terra); }
+  .offer-sub { font-size: 1rem; color: var(--muted); margin-bottom: 2rem; }
+  .offer-btns { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--deep); color: rgba(250,247,242,.6);
+    padding: 3rem 8% 2rem;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem;
+  }
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; color: var(--cream); font-weight: 600;
+    margin-bottom: .75rem; display: block;
+  }
+  .footer-logo span { color: var(--gold); }
+  .footer-desc { font-size: .83rem; line-height: 1.7; }
+  .footer-heading {
+    font-size: .78rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: .08em; color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .footer-links { list-style: none; }
+  .footer-links li { margin-bottom: .5rem; }
+  .footer-links a {
+    font-size: .83rem; color: rgba(250,247,242,.55);
+    text-decoration: none; transition: color .2s;
+  }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-bottom {
+    background: var(--deep); text-align: center;
+    padding: 1rem 8%;
+    border-top: 1px solid rgba(250,247,242,.07);
+    font-size: .78rem; color: rgba(250,247,242,.3);
+  }
+
+  /* ── STICKY MOBILE BTNS ── */
+  .sticky-btns {
+    display: none;
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+    background: var(--white);
+    padding: .75rem 1rem;
+    box-shadow: 0 -4px 20px rgba(0,0,0,.12);
+    gap: .6rem;
+  }
+  .sticky-btns a {
+    flex: 1; text-align: center; border-radius: 50px;
+    padding: .75rem .5rem; font-size: .82rem; font-weight: 600;
+    text-decoration: none; letter-spacing: .02em;
+    transition: transform .15s;
+  }
+  .sticky-btns a:hover { transform: translateY(-1px); }
+  .sb-wa { background: #25D366; color: var(--white); }
+  .sb-call { background: var(--ivory); color: var(--terra); border: 1.5px solid var(--blush); }
+  .sb-book { background: var(--terra); color: var(--white); }
+
+  /* ── SCROLL ANIMATIONS ── */
+  .reveal {
+    opacity: 0; transform: translateY(30px);
+    transition: opacity .7s ease, transform .7s ease;
+  }
+  .reveal.visible { opacity: 1; transform: none; }
+
+  /* ── RESPONSIVE ── */
+  @media(max-width: 1024px) {
+    #hero { grid-template-columns: 1fr; }
+    .hero-right { display: none; }
+    #what { grid-template-columns: 1fr; gap: 2.5rem; }
+    .what-visual { max-width: 500px; }
+    .steps { grid-template-columns: repeat(2, 1fr); }
+    .steps::before { display: none; }
+    .step { margin-bottom: 2rem; }
+    .form-inner { grid-template-columns: 1fr; }
+    footer { grid-template-columns: 1fr 1fr; }
+  }
+  @media(max-width: 768px) {
+    section { padding: 3.5rem 5%; }
+    nav { display: none; }
+    .sticky-btns { display: flex; }
+    body { padding-bottom: 70px; }
+    .steps { grid-template-columns: 1fr; }
+    footer { grid-template-columns: 1fr; gap: 2rem; }
+    .areas-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57H6D5MN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- HEADER -->
+
+<header id="main-header">
+  <a href="#" class="logo">Dr <span>Skin</span></a>
+  <nav>
+    <a href="#what">About</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#results">Results</a>
+    <a href="#faq">FAQ</a>
+    <a href="#form">Contact</a>
+  </nav>
+  <a href="#form" class="header-cta">Book Free Consultation</a>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-badge">Advanced Dermatology Clinic</div>
+    <h1>Smooth, <em>Hair-Free</em> Skin with Advanced Laser Reduction</h1>
+    <p class="hero-sub">Safe, effective, and long-lasting hair reduction treatments for men and women by experienced dermatologists.</p>
+    <div class="hero-btns">
+      <a href="#form" class="btn-primary">✨ Book Free Consultation</a>
+      <a href="https://wa.me/91XXXXXXXXXX" class="btn-whatsapp" target="_blank">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Now
+      </a>
+      <a href="tel:+91XXXXXXXXXX" class="btn-outline">📞 Call Now</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-wrap"></div>
+    <div class="hero-img-overlay"></div>
+    <div class="hero-stat-card">
+      <div class="stat-num">5000+</div>
+      <div class="stat-label">Happy Patients</div>
+    </div>
+    <div class="hero-stat-card">
+      <div class="stat-num">98%</div>
+      <div class="stat-label">Satisfaction Rate</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div id="trust">
+  <div class="trust-item"><span class="trust-icon">🏥</span><span class="trust-text">Advanced Dermatology Clinic</span></div>
+  <div class="trust-item"><span class="trust-icon">👨‍⚕️</span><span class="trust-text">Expert Dermatologists</span></div>
+  <div class="trust-item"><span class="trust-icon">✅</span><span class="trust-text">FDA-Approved Technology</span></div>
+  <div class="trust-item"><span class="trust-icon">🌿</span><span class="trust-text">Safe for All Skin Types</span></div>
+  <div class="trust-item"><span class="trust-icon">⭐</span><span class="trust-text">Thousands of Happy Patients</span></div>
+</div>
+
+<!-- WHAT IS LASER HAIR REDUCTION -->
+<section id="what">
+  <div>
+    <p class="section-label reveal">What is it?</p>
+    <h2 class="section-title reveal">Laser Hair Reduction <em>Explained</em></h2>
+    <p class="section-sub reveal">Laser Hair Reduction is a non-surgical treatment that uses advanced laser technology to target hair follicles, reducing unwanted hair growth safely and effectively — leaving your skin smooth and radiant.</p>
+    <h3 style="font-size:.85rem;font-weight:600;color:var(--deep);margin:2rem 0 .75rem;letter-spacing:.06em;text-transform:uppercase;" class="reveal">Common Treatment Areas</h3>
+    <div class="areas-grid reveal">
+      <div class="area-chip">Face</div>
+      <div class="area-chip">Upper Lip</div>
+      <div class="area-chip">Chin</div>
+      <div class="area-chip">Underarms</div>
+      <div class="area-chip">Arms</div>
+      <div class="area-chip">Legs</div>
+      <div class="area-chip">Bikini Area</div>
+      <div class="area-chip">Back</div>
+      <div class="area-chip">Chest</div>
+    </div>
+  </div>
+  <div class="what-visual reveal">
+    <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=700&q=80" alt="Laser hair reduction treatment" />
+    <div class="what-visual-badge">
+      <div class="wvb-num">6–8</div>
+      <div class="wvb-text">Sessions for best results</div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits">
+  <div class="benefits-header">
+    <p class="section-label reveal">Why Laser?</p>
+    <h2 class="section-title reveal">Treatment <em>Benefits</em></h2>
+    <p class="section-sub reveal">Experience a life free from razors, waxing, and unwanted hair — with lasting results you can see and feel.</p>
+  </div>
+  <div class="benefits-grid">
+    <div class="benefit-card reveal">
+      <span class="benefit-icon">⏳</span>
+      <div class="benefit-title">Long-Lasting Reduction</div>
+      <div class="benefit-desc">Significantly reduces hair growth for long-term smooth skin — no more daily shaving.</div>
+    </div>
+    <div class="benefit-card reveal">
+      <span class="benefit-icon">🌸</span>
+      <div class="benefit-title">Painless & Comfortable</div>
+      <div class="benefit-desc">Most patients experience only mild warmth — far more comfortable than waxing.</div>
+    </div>
+    <div class="benefit-card reveal">
+      <span class="benefit-icon">👫</span>
+      <div class="benefit-title">For Men & Women</div>
+      <div class="benefit-desc">Tailored treatments for all genders across a wide range of body areas.</div>
+    </div>
+    <div class="benefit-card reveal">
+      <span class="benefit-icon">🪒</span>
+      <div class="benefit-title">No Waxing or Cuts</div>
+      <div class="benefit-desc">Say goodbye to painful waxing strips and razor nicks forever.</div>
+    </div>
+    <div class="benefit-card reveal">
+      <span class="benefit-icon">⚡</span>
+      <div class="benefit-title">Minimal Downtime</div>
+      <div class="benefit-desc">Return to your daily routine right after treatment — no recovery period needed.</div>
+    </div>
+    <div class="benefit-card reveal">
+      <span class="benefit-icon">✨</span>
+      <div class="benefit-title">Smooth, Healthy Skin</div>
+      <div class="benefit-desc">Achieve silky, radiant skin that boosts your confidence every day.</div>
+    </div>
+    <div class="benefit-card reveal">
+      <span class="benefit-icon">🕐</span>
+      <div class="benefit-title">Quick Sessions</div>
+      <div class="benefit-desc">Sessions as short as 15–20 minutes — easily fits into a busy schedule.</div>
+    </div>
+    <div class="benefit-card reveal">
+      <span class="benefit-icon">💰</span>
+      <div class="benefit-title">Cost Effective</div>
+      <div class="benefit-desc">Invest once and save years of waxing, threading, and razoring costs.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE DR SKIN -->
+<section id="why">
+  <p class="section-label reveal">Our Edge</p>
+  <h2 class="section-title reveal">Why Choose <em>Dr Skin?</em></h2>
+  <p class="section-sub reveal">We combine clinical expertise with cutting-edge technology to deliver exceptional, personalized results for every patient.</p>
+  <div class="why-grid">
+    <div class="why-card reveal"><div class="why-num">01</div><div class="why-title">Expert Dermatologists</div><div class="why-desc">Board-certified specialists with years of experience in cosmetic dermatology.</div></div>
+    <div class="why-card reveal"><div class="why-num">02</div><div class="why-title">Advanced Laser Technology</div><div class="why-desc">We use the latest FDA-approved laser systems for safe and effective results.</div></div>
+    <div class="why-card reveal"><div class="why-num">03</div><div class="why-title">Personalized Plans</div><div class="why-desc">Every treatment plan is customized to your skin type, tone, and hair type.</div></div>
+    <div class="why-card reveal"><div class="why-num">04</div><div class="why-title">Safe & Hygienic</div><div class="why-desc">Strict clinical hygiene standards are maintained at every step of your care.</div></div>
+    <div class="why-card reveal"><div class="why-num">05</div><div class="why-title">Affordable Packages</div><div class="why-desc">Flexible pricing and package options to suit a variety of budgets.</div></div>
+    <div class="why-card reveal"><div class="why-num">06</div><div class="why-title">Proven Clinical Results</div><div class="why-desc">Thousands of satisfied patients with documented, visible outcomes.</div></div>
+    <div class="why-card reveal"><div class="why-num">07</div><div class="why-title">Patient-Centered Care</div><div class="why-desc">We listen, educate, and guide — your comfort and confidence come first.</div></div>
+  </div>
+</section>
+
+<!-- BEFORE & AFTER -->
+<section id="results">
+  <div class="results-header">
+    <p class="section-label reveal">Transformations</p>
+    <h2 class="section-title reveal">Before & <em>After Results</em></h2>
+    <p class="section-sub reveal">Real patients, real results. See the visible difference our laser hair reduction treatments deliver.</p>
+  </div>
+  <div class="ba-grid">
+    <div class="ba-card reveal">
+      <div class="ba-imgs">
+        <div class="ba-img"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80" alt="Before treatment" /><span class="ba-label">Before</span></div>
+        <div class="ba-img"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80" alt="After treatment" /><span class="ba-label">After</span></div>
+      </div>
+      <div class="ba-info"><div class="ba-area">Upper Lip Treatment</div><div class="ba-sessions">6 sessions · Female Patient</div></div>
+    </div>
+    <div class="ba-card reveal">
+      <div class="ba-imgs">
+        <div class="ba-img"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&q=80" alt="Before treatment" /><span class="ba-label">Before</span></div>
+        <div class="ba-img"><img src="https://images.unsplash.com/photo-1614859324669-927e70f7a58a?w=400&q=80" alt="After treatment" /><span class="ba-label">After</span></div>
+      </div>
+      <div class="ba-info"><div class="ba-area">Full Leg Treatment</div><div class="ba-sessions">8 sessions · Female Patient</div></div>
+    </div>
+    <div class="ba-card reveal">
+      <div class="ba-imgs">
+        <div class="ba-img"><img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=400&q=80" alt="Before treatment" /><span class="ba-label">Before</span></div>
+        <div class="ba-img"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&q=80" alt="After treatment" /><span class="ba-label">After</span></div>
+      </div>
+      <div class="ba-info"><div class="ba-area">Back Treatment</div><div class="ba-sessions">8 sessions · Male Patient</div></div>
+    </div>
+  </div>
+  <p class="ba-disclaimer reveal">* Results may vary from patient to patient. Individual results depend on skin type, hair type, and treatment compliance.</p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="process">
+  <div class="process-header">
+    <p class="section-label reveal">The Process</p>
+    <h2 class="section-title reveal">How Your Treatment <em>Works</em></h2>
+    <p class="section-sub reveal" style="margin:0 auto;">A simple, transparent, four-step journey to smooth, hair-free skin.</p>
+  </div>
+  <div class="steps">
+    <div class="step reveal">
+      <div class="step-num">1</div>
+      <div class="step-title">Consultation & Skin Assessment</div>
+      <div class="step-desc">Our dermatologist evaluates your skin type, hair type, and treatment goals to build your plan.</div>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">2</div>
+      <div class="step-title">Customized Treatment Plan</div>
+      <div class="step-desc">A personalized session schedule is created based on your specific skin and hair profile.</div>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">3</div>
+      <div class="step-title">Laser Hair Reduction Session</div>
+      <div class="step-desc">Precise laser energy targets follicles in a comfortable, quick in-clinic session.</div>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">4</div>
+      <div class="step-title">Follow-Up & Maintenance</div>
+      <div class="step-desc">We monitor your progress and schedule maintenance sessions to ensure lasting results.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="testi-header">
+    <p class="section-label reveal">Patient Stories</p>
+    <h2 class="section-title reveal">What Our Patients <em>Say</em></h2>
+    <p class="section-sub reveal" style="margin:0 auto;">Thousands of happy patients. Read their stories and see why Dr Skin is the trusted choice.</p>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"The treatment was so comfortable and I noticed visible reduction after just a few sessions. The team made me feel at ease throughout. Highly recommended!"</p>
+      <div class="testi-author"><div class="testi-avatar">P</div><div><div class="testi-name">Priya M.</div><div class="testi-meta">Underarms & Bikini · 6 sessions</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"I was skeptical at first but the results have been incredible. No more daily shaving and my skin feels smoother than ever. Dr Skin's team is very professional."</p>
+      <div class="testi-author"><div class="testi-avatar">R</div><div><div class="testi-name">Rahul S.</div><div class="testi-meta">Back & Chest · 8 sessions</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"Finally found a clinic that takes time to explain everything. The consultation was thorough and the treatment results exceeded my expectations. Worth every rupee!"</p>
+      <div class="testi-author"><div class="testi-avatar">A</div><div><div class="testi-name">Ananya K.</div><div class="testi-meta">Full Face & Legs · 7 sessions</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"Suffered from ingrown hairs for years from waxing. Laser at Dr Skin completely changed my life — smooth skin and zero ingrowns. Absolutely love the results!"</p>
+      <div class="testi-author"><div class="testi-avatar">S</div><div><div class="testi-name">Sneha R.</div><div class="testi-meta">Arms & Legs · 6 sessions</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"Very hygienic clinic with state-of-the-art equipment. The dermatologist was kind and the procedure was much less painful than I expected. Seeing great results!"</p>
+      <div class="testi-author"><div class="testi-avatar">V</div><div><div class="testi-name">Vijay P.</div><div class="testi-meta">Upper Lip & Chin · 5 sessions</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"Booked through WhatsApp and the process was seamless. Staff are warm and welcoming. The results are exactly as promised — smooth, beautiful skin. Thank you Dr Skin!"</p>
+      <div class="testi-author"><div class="testi-avatar">M</div><div><div class="testi-name">Meera T.</div><div class="testi-meta">Underarms & Full Arms · 6 sessions</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="faq-header">
+    <p class="section-label reveal">Got Questions?</p>
+    <h2 class="section-title reveal">Frequently Asked <em>Questions</em></h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Is laser hair reduction permanent?
+        <button class="faq-toggle">+</button>
+      </div>
+      <div class="faq-a">Laser significantly reduces hair growth for long-term results. While it may not be 100% permanent for all patients, most experience an 80–95% long-term reduction, making regrowth minimal and fine.</div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        How many sessions are required?
+        <button class="faq-toggle">+</button>
+      </div>
+      <div class="faq-a">Typically 6–8 sessions are recommended, spaced 4–6 weeks apart, depending on your skin type, hair type, and the area being treated. Our dermatologist will provide a personalized session plan during your consultation.</div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Is the treatment painful?
+        <button class="faq-toggle">+</button>
+      </div>
+      <div class="faq-a">Most patients experience only mild warmth or a slight tingling sensation during treatment — far less discomfort than waxing. Our advanced laser systems include cooling technology to ensure maximum comfort.</div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Is it safe for sensitive skin?
+        <button class="faq-toggle">+</button>
+      </div>
+      <div class="faq-a">Yes, absolutely. When performed by qualified dermatologists using appropriate laser settings, it is safe for sensitive skin. Our team conducts a thorough skin assessment before each treatment to ensure optimal safety.</div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        What areas can be treated?
+        <button class="faq-toggle">+</button>
+      </div>
+      <div class="faq-a">We treat virtually any area including the face (upper lip, chin, forehead), arms, underarms, legs, bikini area, back, chest, and more. Schedule a consultation to discuss your specific needs.</div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Is there any downtime after treatment?
+        <button class="faq-toggle">+</button>
+      </div>
+      <div class="faq-a">Minimal to no downtime. You may notice slight redness or warmth in the treated area for a few hours, but you can return to your daily activities immediately after the session.</div>
+    </div>
+  </div>
+</section>
+
+<!-- LEAD FORM -->
+<section id="form">
+  <div class="form-inner">
+    <div class="form-left">
+      <p class="section-label reveal">Get Started</p>
+      <h2 class="section-title reveal">Book Your <em>Free Consultation</em></h2>
+      <p class="section-sub reveal">Our dermatologists will assess your skin, understand your goals, and recommend the perfect treatment plan — completely free of charge.</p>
+      <div class="form-perks reveal">
+        <div class="form-perk"><div class="form-perk-dot"></div>Free skin assessment included</div>
+        <div class="form-perk"><div class="form-perk-dot"></div>No obligation to proceed</div>
+        <div class="form-perk"><div class="form-perk-dot"></div>Personalized treatment plan</div>
+        <div class="form-perk"><div class="form-perk-dot"></div>Flexible appointment timings</div>
+        <div class="form-perk"><div class="form-perk-dot"></div>Limited slots available — book today</div>
+      </div>
+    </div>
+    <div class="form-box reveal">
+      <div class="form-title">Book Free Consultation</div>
+      <div class="form-group">
+        <label>Full Name *</label>
+        <input type="text" placeholder="Your full name" />
+      </div>
+      <div class="form-group">
+        <label>Phone Number *</label>
+        <input type="tel" placeholder="+91 XXXXX XXXXX" />
+      </div>
+      <div class="form-group">
+        <label>Email (Optional)</label>
+        <input type="email" placeholder="your@email.com" />
+      </div>
+      <div class="form-group">
+        <label>Treatment Area *</label>
+        <select>
+          <option value="">Select treatment area</option>
+          <option>Face</option>
+          <option>Upper Lip</option>
+          <option>Chin</option>
+          <option>Underarms</option>
+          <option>Arms</option>
+          <option>Legs</option>
+          <option>Bikini Area</option>
+          <option>Back</option>
+          <option>Chest</option>
+          <option>Full Body</option>
+          <option>Other / Multiple Areas</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Preferred Consultation Time</label>
+        <select>
+          <option value="">Select preferred time</option>
+          <option>Morning (9am – 12pm)</option>
+          <option>Afternoon (12pm – 4pm)</option>
+          <option>Evening (4pm – 7pm)</option>
+        </select>
+      </div>
+      <button class="form-submit" onclick="handleSubmit()">✨ Book Your Free Consultation</button>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER SECTION -->
+<section id="offer">
+  <div class="offer-pill">⏰ Limited Time Offer</div>
+  <h2 class="offer-title reveal">Free Skin Assessment with <em>Every Consultation</em></h2>
+  <p class="offer-sub reveal">Get a comprehensive skin assessment included with your laser hair reduction consultation — at absolutely no cost. Special package discounts also available for multiple treatment areas.</p>
+  <div class="offer-btns">
+    <a href="#form" class="btn-primary">Claim Free Consultation</a>
+    <a href="https://wa.me/91XXXXXXXXXX" class="btn-whatsapp" target="_blank">
+      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Chat on WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <a href="#" class="footer-logo">Dr <span>Skin</span></a>
+    <p class="footer-desc">Advanced Dermatology & Cosmetology Clinic providing expert laser hair reduction and skin care treatments for men and women.</p>
+  </div>
+  <div>
+    <div class="footer-heading">Quick Links</div>
+    <ul class="footer-links">
+      <li><a href="#what">About Treatment</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#why">Why Dr Skin</a></li>
+      <li><a href="#results">Before & After</a></li>
+      <li><a href="#process">Treatment Process</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="footer-heading">Treatment Areas</div>
+    <ul class="footer-links">
+      <li><a href="#">Face & Upper Lip</a></li>
+      <li><a href="#">Underarms</a></li>
+      <li><a href="#">Arms & Legs</a></li>
+      <li><a href="#">Bikini Area</a></li>
+      <li><a href="#">Back & Chest</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="footer-heading">Contact</div>
+    <ul class="footer-links">
+      <li><a href="tel:+91XXXXXXXXXX">📞 +91 XXXXX XXXXX</a></li>
+      <li><a href="https://wa.me/91XXXXXXXXXX">💬 WhatsApp Us</a></li>
+      <li><a href="mailto:info@drskin.in">✉️ info@drskin.in</a></li>
+      <li><a href="#">📍 Your Clinic Address</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">© 2025 Dr Skin Advanced Dermatology & Cosmetology Clinic. All rights reserved. | Results may vary.</div>
+
+<!-- STICKY MOBILE BUTTONS -->
+<div class="sticky-btns">
+  <a href="https://wa.me/91XXXXXXXXXX" class="sb-wa" target="_blank">💬 WhatsApp</a>
+  <a href="tel:+91XXXXXXXXXX" class="sb-call">📞 Call</a>
+  <a href="#form" class="sb-book">Book Now</a>
+</div>
+
+<script>
+  // Scroll animations
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Header scroll shadow
+  window.addEventListener('scroll', () => {
+    document.getElementById('main-header').classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  // FAQ toggle
+  function toggleFaq(el) {
+    const item = el.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Form submit
+  function handleSubmit() {
+    const name = document.querySelector('#form input[type="text"]').value;
+    const phone = document.querySelector('#form input[type="tel"]').value;
+    if (!name || !phone) { alert('Please enter your name and phone number.'); return; }
+    alert(`Thank you, ${name}! We'll call you at ${phone} to confirm your free consultation. You can also reach us on WhatsApp for a faster response!`);
+  }
+</script>
+</body>
+</html>
